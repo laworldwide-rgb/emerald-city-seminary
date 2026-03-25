@@ -218,11 +218,8 @@ var TRANSLATIONS = {
     trustLine3:      "Scripture remains the final authority. Theologian Lewis knows this. So do we.",
     exampleLabel:    "Try asking something like:",
     exampleQuestions: [
-      "What did Martin Luther teach about justification?",
       "Did the early church believe in the rapture?",
       "What is the difference between Law and Gospel?",
-      "Why do Christians disagree about baptism?",
-      "What did Augustine teach about grace?",
       "How do different traditions understand the Lord\u2019s Supper?"
     ],
     userGuide:       "\u2318 User Guide",
@@ -305,11 +302,8 @@ var TRANSLATIONS = {
     trustLine3:      "La Escritura sigue siendo la autoridad final. El Te\u00F3logo Lewis lo sabe. Nosotros tambi\u00E9n.",
     exampleLabel:    "Intenta preguntar algo como:",
     exampleQuestions: [
-      "\u00BFQu\u00E9 ense\u00F1\u00F3 Mart\u00EDn Lutero sobre la justificaci\u00F3n?",
       "\u00BFCre\u00EDa la iglesia primitiva en el rapto?",
       "\u00BFCu\u00E1l es la diferencia entre Ley y Evangelio?",
-      "\u00BFPor qu\u00E9 los cristianos no est\u00E1n de acuerdo sobre el bautismo?",
-      "\u00BFQu\u00E9 ense\u00F1\u00F3 Agust\u00EDn sobre la gracia?"
     ],
     userGuide:       "\u2318 Gu\u00EDa de Usuario",
     tipBtn:          "\u2726 Apoyar al Theologian Lewis",
@@ -389,11 +383,8 @@ var TRANSLATIONS = {
     trustLine3:      "శాస్త్రం అంతిమ అధికారంగా ఉంటుంది. ధర్మశాస్త్రవేత్త లుయిస్ ఇది తెలుసు. మేము కూడా.",
     exampleLabel:    "\u0C07\u0C32\u0C3E \u0C05\u0C21\u0C17\u0C02\u0C21\u0C3F:",
     exampleQuestions: [
-      "\u0C2E\u0C3E\u0C30\u0C4D\u0C1F\u0C3F\u0C28\u0C4D \u0C32\u0C42\u0C25\u0C30\u0C4D \u0C28\u0C4D\u0C2F\u0C3E\u0C2F\u0C40\u0C15\u0C30\u0C23 \u0C17\u0C41\u0C30\u0C3F\u0C02\u0C1A\u0C3F \u0C0F\u0C2E\u0C3F \u0C28\u0C47\u0C30\u0C4D\u0C2A\u0C3F\u0C02\u0C1A\u0C3E\u0C30\u0C41?",
       "\u0C06\u0C26\u0C3F \u0C38\u0C2D \u0C30\u0C3E\u0C2A\u0C4D\u0C1A\u0C30\u0C4D\u0C32\u0C4B \u0C28\u0C2E\u0C4D\u0C2E\u0C3F\u0C02\u0C26\u0C3E?",
-      "\u0C27\u0C30\u0C4D\u0C2E\u0C36\u0C3E\u0C38\u0C4D\u0C24\u0C4D\u0C30\u0C02 \u0C2E\u0C30\u0C3F\u0C2F\u0C41 \u0C38\u0C41\u0C35\u0C3E\u0C30\u0C4D\u0C24 \u0C2E\u0C27\u0C4D\u0C2F \u0C35\u0C4D\u0C2F\u0C24\u0C4D\u0C2F\u0C3E\u0C38\u0C02 \u0C0F\u0C2E\u0C3F\u0C1F\u0C3F?",
-      "\u0C15\u0C4D\u0C30\u0C48\u0C38\u0C4D\u0C24\u0C35\u0C41\u0C32\u0C41 \u0C1C\u0C4D\u0C1E\u0C3E\u0C28\u0C38\u0C4D\u0C28\u0C3E\u0C28\u0C02\u0C2A\u0C48 \u0C0E\u0C02\u0C26\u0C41\u0C15\u0C41 \u0C35\u0C3F\u0C2D\u0C47\u0C26\u0C3F\u0C38\u0C4D\u0C24\u0C3E\u0C30\u0C41?",
-      "\u0C06\u0C17\u0C38\u0C4D\u0C1F\u0C40\u0C28\u0C4D \u0C15\u0C43\u0C2A\u0C15\u0C41 \u0C38\u0C02\u0C2C\u0C02\u0C27\u0C3F\u0C02\u0C1A\u0C3F \u0C0F\u0C2E\u0C3F \u0C28\u0C47\u0C30\u0C4D\u0C2A\u0C3F\u0C02\u0C1C\u0C3E\u0C30\u0C41?"
+      "\u0C27\u0C30\u0C4D\u0C2E\u0C36\u0C3E\u0C38\u0C4D\u0C24\u0C4D\u0C30\u0C02 \u0C2E\u0C30\u0C3F\u0C2F\u0C41 \u0C38\u0C41\u0C35\u0C3E\u0C30\u0C4D\u0C24 \u0C2E\u0C27\u0C4D\u0C2F \u0C35\u0C4D\u0C2F\u0C24\u0C4D\u0C2F\u0C3E\u0C38\u0C02 \u0C0F\u0C2E\u0C3F\u0C1F\u0C3F?"
     ],
     userGuide:       "\u2318 \u0C35\u0C3F\u0C28\u0C3F\u0C2F\u0C4B\u0C17\u0C26\u0C3E\u0C30\u0C41 \u0C2E\u0C3E\u0C30\u0C4D\u0C17\u0C26\u0C30\u0C4D\u0C36\u0C3F",
     tipBtn:          "\u2726 \u0C2A\u0C4D\u0C30\u0C4A\u0C2B\u0C46\u0C38\u0C30\u0C4D\u0C15\u0C41 \u0C26\u0C47\u0C23\u0C02",
