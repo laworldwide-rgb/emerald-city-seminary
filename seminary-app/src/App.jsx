@@ -201,7 +201,7 @@ function buildSystemPrompt(pdfName) {
 var TRANSLATIONS = {
   en: {
     seminary:        "Emerald City Seminary",
-    subheading:      "Conversations with your guide, Theologian J.R. Lewis",
+    subheading:      "Conversations with your guide, Prof. J.R. Lewis",
     orientationLine: "Ask difficult theological questions. Explore historic Christian thought. Learn through conversation.",
     quizHook:        "Theology Challenge",
     quizHookSub:     "Test your theology knowledge with seminary-level quizzes.",
@@ -215,7 +215,7 @@ var TRANSLATIONS = {
     trustLabel:      "A word about how we approach this",
     trustLine1:      "Emerald City Seminary is a theological study tool \u2014 nothing more, and nothing less. It does not replace your pastor, your church, or seminary training. Theology was never meant to be done alone, and no software changes that.",
     trustLine2:      "What it offers is a patient, always-available study companion grounded in orthodox Christian tradition \u2014 designed to help you ask better questions, read more carefully, and think more clearly.",
-    trustLine3:      "Scripture remains the final authority. Theologian Lewis knows this. So do we.",
+    trustLine3:      "Scripture remains the final authority. Prof. Lewis knows this. So do we.",
     exampleLabel:    "Try asking something like:",
     exampleQuestions: [
       "Did the early church believe in the rapture?",
@@ -223,12 +223,12 @@ var TRANSLATIONS = {
       "How do different traditions understand the Lord\u2019s Supper?"
     ],
     userGuide:       "\u2318 User Guide",
-    tipBtn:          "\u2726 Tip Theologian Lewis",
+    tipBtn:          "\u2726 Tip Prof. Lewis",
     saveBtn:         "\u2193 Save Conversation",
     installBtn:      "\u2B07 Android & Chrome Users \u2014 Add to Home Screen",
     newConvo:        "\u2295 New Conversation",
-    loading:         "Theologian Lewis is composing a response\u2026",
-    placeholder:     "Ask Theologian Lewis a question, start a lecture, prepare a sermon, or begin a quiz\u2026",
+    loading:         "Prof. Lewis is composing a response\u2026",
+    placeholder:     "Ask Prof. Lewis a question, start a lecture, prepare a sermon, or begin a quiz\u2026",
     placeholderQuiz: "Answer Question {n} of {total}\u2026",
     placeholderSerm: "Continue your sermon preparation\u2026",
     footerQuote:     "\u201CThe Gospel is not advice. It is a verdict.\u201D \u2014 R.F. Capon \u00B7 Upload readings via \uD83D\uDCCE",
@@ -249,19 +249,19 @@ var TRANSLATIONS = {
       items: [
         ["\uD83C\uDDFA\uD83C\uDDF8 English / \uD83C\uDDEA\uD83C\uDDF8 Espa\u00F1ol / \uD83C\uDDEE\uD83C\uDDF3 \u0C24\u0C46\u0C32\u0C41\u0C17\u0C41", "Language selector. Tap your flag to switch the entire app \u2014 interface and Professor \u2014 to that language."],
         ["\u2318 User Guide", "Opens this guide."],
-        ["\u2726 Tip Theologian Lewis", "Opens a PayPal donation modal. Suggested amounts $5, $10, $25."],
+        ["\u2726 Tip Prof. Lewis", "Opens a PayPal donation modal. Suggested amounts $5, $10, $25."],
         ["\u2193 Save Conversation", "Downloads your full conversation as a formatted PDF. Appears once a conversation is in progress."],
         ["\u2B07 Add to Home Screen", "Installs the app on Android or Chrome desktop. Only appears when available."],
         ["\u2295 New Conversation", "Clears and restarts. If mid-quiz or mid-course a warning appears showing what you will lose, with a download option before clearing."],
-        ["\uD83D\uDCCE Paperclip", "Upload a PDF for Theologian Lewis to read, review, or teach from."],
+        ["\uD83D\uDCCE Paperclip", "Upload a PDF for Prof. Lewis to read, review, or teach from."],
         ["\u2191 Send button", "Sends your message. On mobile, Return adds a new line \u2014 tap \u2191 to send."],
-        ["ECS monogram", "Appears in the header and next to Theologian Lewis\u2019s responses. Stands for Emerald City Seminary."]
+        ["ECS monogram", "Appears in the header and next to Prof. Lewis\u2019s responses. Stands for Emerald City Seminary."]
       ],
       simpleTitle: "SIMPLE USES",
       simpleItems: [
-        ["Ask a question", "Type any theological question and tap \u2191. Theologian Lewis responds with the rigor of a seminary professor, names the school of thought your question aligns with, and often asks you a question in return."],
+        ["Ask a question", "Type any theological question and tap \u2191. Prof. Lewis responds with the rigor of a seminary professor, names the school of thought your question aligns with, and often asks you a question in return."],
         ["Paste for evaluation", "Copy a sermon, post, article, or argument and paste it into the input field. Add an instruction such as \u201CPlease evaluate this for Law/Gospel clarity\u201D and tap \u2191."],
-        ["Upload a PDF for review", "Tap \uD83D\uDCCE, select a PDF, then tell Theologian Lewis what you want: \u201CIs this argument theologically sound?\u201D"],
+        ["Upload a PDF for review", "Tap \uD83D\uDCCE, select a PDF, then tell Prof. Lewis what you want: \u201CIs this argument theologically sound?\u201D"],
         ["Upload a PDF to teach from", "Tap \uD83D\uDCCE, select a PDF, then say: \u201CPlease teach me from this as a required reading.\u201D"]
       ],
       courseTitle: "THE 3-WEEK INTENSIVE",
@@ -270,7 +270,7 @@ var TRANSLATIONS = {
         ["The curriculum", "12 lectures across 3 weeks covering Law & Gospel, the Kingdom of God, eschatology, pneumatology, and pastoral theology. Plus Quiz 1, Quiz 2, and a Midterm Exam."],
         ["Pace", "The course moves as fast as you type. The \u201C3-Week\u201D label is a suggested pace \u2014 not a timer."],
         ["Losing progress", "Progress is saved to this device. Lost if you clear the conversation or switch devices. Use \u2193 Save Conversation to protect your work."],
-        ["Recovering progress", "Tell Theologian Lewis where you were: \u201CI completed Lectures 1\u20134. Can we start Lecture 5?\u201D"]
+        ["Recovering progress", "Tell Prof. Lewis where you were: \u201CI completed Lectures 1\u20134. Can we start Lecture 5?\u201D"]
       ],
       installTitle: "INSTALLING THE APP",
       installItems: [
@@ -285,7 +285,7 @@ var TRANSLATIONS = {
   },
   es: {
     seminary:        "Emerald City Seminary",
-    subheading:      "Conversaciones con tu gu\u00EDa, el Te\u00F3logo J.R. Lewis",
+    subheading:      "Conversaciones con tu gu\u00EDa, el Prof. J.R. Lewis",
     orientationLine: "Haz preguntas teol\u00F3gicas dif\u00EDciles. Explora el pensamiento cristiano hist\u00F3rico. Aprende a trav\u00E9s de la conversaci\u00F3n.",
     quizHook:        "Desaf\u00EDo Teol\u00F3gico",
     quizHookSub:     "Pon a prueba tus conocimientos con ex\u00E1menes al nivel de seminario.",
@@ -306,12 +306,12 @@ var TRANSLATIONS = {
       "\u00BFCu\u00E1l es la diferencia entre Ley y Evangelio?",
     ],
     userGuide:       "\u2318 Gu\u00EDa de Usuario",
-    tipBtn:          "\u2726 Apoyar al Theologian Lewis",
+    tipBtn:          "\u2726 Apoyar al Prof. Lewis",
     saveBtn:         "\u2193 Guardar Conversaci\u00F3n",
     installBtn:      "\u2B07 Usuarios Android y Chrome \u2014 A\u00F1adir a Inicio",
     newConvo:        "\u2295 Nueva Conversaci\u00F3n",
-    loading:         "El Theologian Lewis est\u00E1 redactando una respuesta\u2026",
-    placeholder:     "Haz una pregunta al Theologian Lewis, inicia una conferencia o comienza un examen\u2026",
+    loading:         "El Prof. Lewis est\u00E1 redactando una respuesta\u2026",
+    placeholder:     "Haz una pregunta al Prof. Lewis, inicia una conferencia o comienza un examen\u2026",
     placeholderQuiz: "Responde la Pregunta {n} de {total}\u2026",
     placeholderSerm: "Contin\u00FAa la preparaci\u00F3n de tu serm\u00F3n\u2026",
     footerQuote:     "\u201CEl Evangelio no es un consejo. Es un veredicto.\u201D \u2014 R.F. Capon \u00B7 Sube lecturas con \uD83D\uDCCE",
@@ -330,19 +330,19 @@ var TRANSLATIONS = {
       items: [
         ["\uD83C\uDDFA\uD83C\uDDF8 English / \uD83C\uDDEA\uD83C\uDDF8 Espa\u00F1ol / \uD83C\uDDEE\uD83C\uDDF3 \u0C24\u0C46\u0C32\u0C41\u0C17\u0C41", "Selector de idioma. Toca tu bandera para cambiar el idioma de toda la app."],
         ["\u2318 Gu\u00EDa de Usuario", "Abre esta gu\u00EDa."],
-        ["\u2726 Apoyar al Theologian Lewis", "Abre un modal de donaci\u00F3n v\u00EDa PayPal. Cantidades sugeridas: $5, $10, $25."],
+        ["\u2726 Apoyar al Prof. Lewis", "Abre un modal de donaci\u00F3n v\u00EDa PayPal. Cantidades sugeridas: $5, $10, $25."],
         ["\u2193 Guardar Conversaci\u00F3n", "Descarga tu conversaci\u00F3n como PDF."],
         ["\u2B07 A\u00F1adir a inicio", "Instala la app en Android o Chrome."],
         ["\u2295 Nueva Conversaci\u00F3n", "Borra y reinicia. Aparecer\u00E1 una advertencia con opci\u00F3n de descargar antes de borrar."],
-        ["\uD83D\uDCCE Clip", "Sube un PDF para que el Theologian Lewis lo revise o ense\u00F1e."],
+        ["\uD83D\uDCCE Clip", "Sube un PDF para que el Prof. Lewis lo revise o ense\u00F1e."],
         ["\u2191 Bot\u00F3n enviar", "Env\u00EDa tu mensaje. En m\u00F3vil, Intro crea un p\u00E1rrafo \u2014 toca \u2191 para enviar."],
         ["Siglas ECS", "Significan Emerald City Seminary."]
       ],
       simpleTitle: "USOS SIMPLES",
       simpleItems: [
-        ["Hacer una pregunta", "Escribe cualquier pregunta teol\u00F3gica y toca \u2191. El Theologian Lewis responde con el rigor de un profesor de seminario."],
+        ["Hacer una pregunta", "Escribe cualquier pregunta teol\u00F3gica y toca \u2191. El Prof. Lewis responde con el rigor de un profesor de seminario."],
         ["Pegar para evaluaci\u00F3n", "Copia un serm\u00F3n, art\u00EDculo o argumento, p\u00E9galo en el campo de texto y a\u00F1ade una instrucci\u00F3n."],
-        ["Subir PDF para revisi\u00F3n", "Toca \uD83D\uDCCE, selecciona un PDF y dile al Theologian Lewis lo que necesitas."],
+        ["Subir PDF para revisi\u00F3n", "Toca \uD83D\uDCCE, selecciona un PDF y dile al Prof. Lewis lo que necesitas."],
         ["Subir PDF para ense\u00F1ar", "Toca \uD83D\uDCCE, selecciona un PDF y di: \u201CEnse\u00F1ame desde este documento como lectura obligatoria.\u201D"]
       ],
       courseTitle: "EL INTENSIVO DE 3 SEMANAS",
@@ -351,7 +351,7 @@ var TRANSLATIONS = {
         ["El plan de estudios", "12 conferencias en 3 semanas sobre Ley y Evangelio, el Reino de Dios, escatolog\u00EDa, pneumatolog\u00EDa y teolog\u00EDa pastoral."],
         ["El ritmo", "El curso avanza al ritmo que escribes. Las \u201C3 semanas\u201D son una sugerencia, no un temporizador."],
         ["Perder el progreso", "El progreso se guarda en este dispositivo. Se pierde si limpias la conversaci\u00F3n o cambias de dispositivo."],
-        ["Recuperar el progreso", "D\u00EDle al Theologian Lewis d\u00F3nde estabas: \u201CTermin\u00E9 las Conferencias 1\u20134. \u00BFPodemos empezar la 5?\u201D"]
+        ["Recuperar el progreso", "D\u00EDle al Prof. Lewis d\u00F3nde estabas: \u201CTermin\u00E9 las Conferencias 1\u20134. \u00BFPodemos empezar la 5?\u201D"]
       ],
       installTitle: "INSTALAR LA APLICACI\u00D3N",
       installItems: [
@@ -563,7 +563,7 @@ export default function App() {
   function getSessionContext() {
     if (quizState) return "You are currently on Question " + (quizState.currentQ + 1) + " of " + quizState.quiz.questions.length + " in " + quizState.quiz.title + ".";
     if (sermonMode) return "You are currently in the middle of a Sermon Preparation session.";
-    if (messages.length > 4) return "You have an active conversation with Theologian Lewis in progress.";
+    if (messages.length > 4) return "You have an active conversation with Prof. Lewis in progress.";
     return null;
   }
 
@@ -1079,7 +1079,7 @@ export default function App() {
             ["Purpose", "Emerald City Seminary is an educational tool designed to help users explore Christian theology and biblical concepts."],
             ["Educational use only", "Content is provided for informational and educational purposes only and should not be considered official doctrinal teaching, pastoral counseling, or authoritative theological guidance."],
             ["Accuracy", "While we strive for accuracy, responses may be incomplete or contain errors. Users are encouraged to consult Scripture, qualified clergy, or trusted theological sources for guidance on matters of faith and practice."],
-            ["About Theologian Lewis", "Theologian Lewis is a fictional guide and does not represent a real person, church, or denomination. This app uses artificial intelligence to generate responses, which may not always reflect precise theological positions or denominational standards."],
+            ["About Prof. Lewis", "Prof. Lewis is a fictional guide and does not represent a real person, church, or denomination. This app uses artificial intelligence to generate responses, which may not always reflect precise theological positions or denominational standards."],
             ["Discretion", "Use of this app is at your own discretion."],
           ].map(function(item, i) {
             return React.createElement("div", { key: i, style: { marginBottom: 16 } },
@@ -1232,7 +1232,7 @@ export default function App() {
         ),
 
         // Title
-        React.createElement("div", { style: { fontFamily: fontSC, fontSize: 20, fontWeight: 600, color: "#1a4a32", textAlign: "center", letterSpacing: "0.06em", marginBottom: 8 } }, "Tip Theologian Lewis"),
+        React.createElement("div", { style: { fontFamily: fontSC, fontSize: 20, fontWeight: 600, color: "#1a4a32", textAlign: "center", letterSpacing: "0.06em", marginBottom: 8 } }, "Tip Prof. Lewis"),
 
         // Divider
         React.createElement("div", { style: { height: 1, background: T.goldLight, margin: "12px 0 18px" } }),
