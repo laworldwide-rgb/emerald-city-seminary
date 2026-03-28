@@ -625,7 +625,7 @@ export default function App() {
       var resp = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ system: langNote + buildSystemPrompt(pdfName || null), messages: apiMessages })
+        body: JSON.stringify({ system: langNote + buildSystemPrompt(pdfName || null), messages: apiMessages, sermonMode: sermonMode })
       });
       if (!resp.ok) { var e = await resp.json().catch(function() { return {}; }); throw new Error(e.error || "HTTP " + resp.status); }
       var data = await resp.json();
@@ -646,7 +646,7 @@ export default function App() {
       var resp = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ system: langNote + buildSystemPrompt(uploadedPDF ? uploadedPDF.name : null), messages: apiMessages })
+        body: JSON.stringify({ system: langNote + buildSystemPrompt(uploadedPDF ? uploadedPDF.name : null), messages: apiMessages, sermonMode: sermonMode })
       });
       if (!resp.ok) { throw new Error("HTTP " + resp.status); }
       var data = await resp.json();
