@@ -496,6 +496,7 @@ export default function App() {
   var [uploadedPDF, setUploadedPDF] = useState(null);
   var [quizState, setQuizState] = useState(null);
   var [sermonMode, setSermonMode] = useState(false);
+  var [conversationSummary, setConversationSummary] = useState("");
   var [installPrompt, setInstallPrompt] = useState(null);
   var [tipOpen, setTipOpen] = useState(false);
   var [guideOpen, setGuideOpen] = useState(false);
@@ -591,6 +592,7 @@ export default function App() {
     setUploadedPDF(null);
     setInput("");
     setConfirmClear(false);
+    setConversationSummary("");
   }
 
   function startQuiz(quizData) {
@@ -613,20 +615,47 @@ export default function App() {
     return { isLast: isLast, modelAnswer: modelAnswer, nextQuestion: isLast ? null : quiz.questions[nextQ].q, nextQNum: nextQ + 1, quizTitle: quiz.title };
   }
 
+  var HISTORY_WINDOW = 16;
+
   async function sendToAPI(msgs, pdfBase64, pdfName) {
     setLoading(true);
     try {
       var langNote = L.langInstruction ? L.langInstruction + "\n\n" : "";
-      var apiMessages = msgs.map(function(m, i) {
-        if (pdfBase64 && m.role === "user" && i === msgs.length - 1) {
+
+      // Trigger summarization when conversation exceeds window
+      if (msgs.length === HISTORY_WINDOW + 2 && !conversationSummary) {
+        var summaryResp = await fetch("/api/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            system: langNote + buildSystemPrompt(pdfName || null),
+            messages: [
+              ...msgs.slice(0, -HISTORY_WINDOW).map(function(m) { return { role: m.role, content: m.content }; }),
+              { role: "user", content: "Summarize the key theological topics discussed, arguments made, any doctrinal positions reached or corrected, and where we are in the sermon preparation process — in 4-6 sentences." }
+            ],
+            sermonMode: false
+          })
+        });
+        if (summaryResp.ok) {
+          var summaryData = await summaryResp.json();
+          var summaryText = summaryData.content.filter(function(b) { return b.type === "text"; }).map(function(b) { return b.text; }).join("");
+          setConversationSummary(summaryText);
+        }
+      }
+
+      // Prune history to window
+      var prunedMsgs = msgs.length > HISTORY_WINDOW ? msgs.slice(-HISTORY_WINDOW) : msgs;
+      var apiMessages = prunedMsgs.map(function(m, i) {
+        if (pdfBase64 && m.role === "user" && i === prunedMsgs.length - 1) {
           return { role: "user", content: [{ type: "document", source: { type: "base64", media_type: "application/pdf", data: pdfBase64 } }, { type: "text", text: m.content }] };
         }
         return { role: m.role, content: m.content };
       });
+
       var resp = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ system: langNote + buildSystemPrompt(pdfName || null), messages: apiMessages, sermonMode: sermonMode })
+        body: JSON.stringify({ system: langNote + buildSystemPrompt(pdfName || null), messages: apiMessages, sermonMode: sermonMode, conversationSummary: conversationSummary })
       });
       if (!resp.ok) { var e = await resp.json().catch(function() { return {}; }); throw new Error(e.error || "HTTP " + resp.status); }
       var data = await resp.json();
@@ -643,11 +672,12 @@ export default function App() {
     setLoading(true);
     try {
       var langNote = L.langInstruction ? L.langInstruction + "\n\n" : "";
-      var apiMessages = msgs.map(function(m) { return { role: m.role, content: m.content }; }).concat([{ role: "user", content: instruction }]);
+      var prunedMsgs = msgs.length > HISTORY_WINDOW ? msgs.slice(-HISTORY_WINDOW) : msgs;
+      var apiMessages = prunedMsgs.map(function(m) { return { role: m.role, content: m.content }; }).concat([{ role: "user", content: instruction }]);
       var resp = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ system: langNote + buildSystemPrompt(uploadedPDF ? uploadedPDF.name : null), messages: apiMessages, sermonMode: sermonMode })
+        body: JSON.stringify({ system: langNote + buildSystemPrompt(uploadedPDF ? uploadedPDF.name : null), messages: apiMessages, sermonMode: sermonMode, conversationSummary: conversationSummary })
       });
       if (!resp.ok) { throw new Error("HTTP " + resp.status); }
       var data = await resp.json();
